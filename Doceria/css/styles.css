@@ -1,0 +1,287 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',  sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul li{
+    list-style: none; 
+}
+
+input[type="text"], input[type="email"], textarea{
+    border: none;
+    border-bottom: #4928c4 1px solid;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], textarea:focus{
+    outline: none;
+}
+
+textarea{
+    height: 150px;
+}
+
+/* SideBar */
+
+#sidebar{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    background-color: #4928c4;
+    padding: 30px;
+}
+
+#sidebar h1{
+    color: #fdfdfd;
+    margin-top: 20px;
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#sidebar ul li{
+    padding-top: 30px;
+}
+
+#sidebar a{
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+#sidebar a:hover{
+    color: #e7e0ff77;
+    transition: 500ms;
+}
+
+#sidebar-container{
+    width: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+#brand{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#brand:hover{
+    cursor: pointer;
+}
+
+
+/* Content Container */ 
+
+#content-container{
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+
+section h2{
+    margin-bottom: 40px;
+    color: #4928c4;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+section{
+    padding-left: 30px;;
+}
+
+/* Welcome Section */
+
+#main-banner{
+    background-image: url(../img/banner2.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+#welcome{
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+
+#welcome::after, #about-us::after{
+    content: "";
+    margin-bottom: 100px;
+    clear: both;
+    display: block;
+}
+
+.section-banner{
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-right: 30px;
+}
+
+.section-banner2{
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    float: right;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+#readmore-btn{
+    width: 100px;
+    height: 50px;
+    padding: 20px 30px;
+    color: #fdfdfd;
+    background-color: #4928c4;
+    text-decoration: none;
+    position: relative;
+    left: 330px;
+}
+#readmore-btn:hover{
+    background-color: #4a28c4be;
+    transition: 500ms;
+}
+#welcome-description p {
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding-right: 30px;
+}
+
+#about-us-description p{
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 40px;
+    padding-right: 30px;
+}
+
+/* Candies section */
+
+.banner-galeria{
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.doces2-imgs, .doces1-imgs, .doces3-imgs{
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.doces1-imgs{
+    width: 18.3%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img1{
+    background-image: url(../img/galeria1.jpg);
+}
+
+#img2{
+    background-image: url(../img/galeria2.jpg);
+}
+
+#img3{
+    background-image: url(../img/galeria3.jpg);
+}
+
+#img4{
+    background-image: url(../img/galeria4.jpg);
+}
+
+#img5{
+    background-image: url(../img/galeria5.jpg);
+}
+
+.doces2-imgs{
+    width: 31.4%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img6{
+    background-image: url(../img/galeria6.jpg);
+}
+
+#img7{
+    background-image: url(../img/galeria7.jpg);
+}
+
+#img8{
+    background-image: url(../img/galeria8.jpg);
+}
+
+.doces3-imgs{
+    width: 23.2%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+#img9{
+    background-image: url(../img/galeria9.jpg);
+}
+
+#img10{
+    background-image: url(../img/galeria10.jpg);
+}
+
+#img11{
+    background-image: url(../img/galeria11.jpg);
+}
+
+#img12{
+    background-image: url(../img/galeria12.jpg);
+}
+
+/* Form */
+
+#contact-us h2, form{
+    padding-left: 30px;
+}
+
+#form-btn{
+    height: 50px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: #4928c4;
+    border: none;
+    color: #FDFDFD;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#form-btn:hover{
+    background-color: #4a28c4be;
+    transition: 500ms;
+}
+
+/* Footer */
+
+#copyright{
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
